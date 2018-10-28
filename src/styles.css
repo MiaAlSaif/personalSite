@@ -1,0 +1,25 @@
+@import url(https://use.typekit.net/cyx6pix.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+* {
+  margin: 0 0 0 0 ;
+  padding: 0;
+  outline: none;
+  border: 0;
+
+}
+body {
+  box-sizing: border-box;
+   color: black;
+     max-width: 100%;
+    max-height: 100%;
+    background-color: #f2ebe7;  /*eeeead;*/
+    overflow: hidden;
+
+}
+
+.accent{
+  color:#e73735;
+}

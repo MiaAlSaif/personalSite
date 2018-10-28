@@ -1,0 +1,56 @@
+.connect  h3 {
+  display: block;
+  padding: .5vw;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  padding-bottom: 2%;
+}
+
+@media screen and (min-width: 320px) {
+  .connect   h3 {
+    font-size: calc(9px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .connect   h3 {
+    font-size: 1.5vw;
+  }
+}
+
+.connect li {
+display: list-item;
+list-style-type: none;
+font-size: 1.2vw;
+padding-bottom: 1%;
+}
+
+@media screen and (min-width: 320px) {
+  .connect  li {
+    font-size: calc(8px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .connect  li {
+    font-size: 1.2vw;
+  }
+}
+
+.connect li img{
+  display: inline;
+  width: 1vw;
+  height: 1vw;
+}
+
+
+.connect a:link, a:visited{
+  text-decoration: none;
+  display: inline-block;
+  color:black;
+
+
+}
+
+.connect a:hover{
+  color:#E3313B;
+cursor: crosshair;
+}

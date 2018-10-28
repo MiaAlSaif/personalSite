@@ -1,0 +1,146 @@
+
+
+.wrapper {
+  position: fixed;
+  order: 1;
+  flex-grow: 2;
+  height: 100%;
+  width: 28%;
+  background-color: #fcc8b1;
+  left: 2%;
+}
+.nameLogo{
+  position: absolute;
+  top: 1%;
+  left: 8%;
+  padding-top: 28%;
+  padding-bottom: 3%;
+  /* transform: translate(-50%, -50%); */
+  color:transparent;
+  font-family:"futura-pt", serif;
+  font-weight:800;
+  font-size: 3.5vw;
+  text-transform:uppercase;
+  -webkit-text-stroke:0.02em black;
+  -webkit-text-decoration:none;
+  text-decoration:none;
+  display: block;
+}
+
+.nameLogo:before{
+  position: absolute;
+  padding-top: 0%;
+  content: attr(data-text);
+  color: #e02321;
+  width: 0%;
+  overflow: hidden;
+  transition: 1.2s;
+}
+
+.nameLogo:hover:before {
+  width: 100%;
+  }
+
+
+.main-menu{
+  order: 1;
+  flex-grow: 2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2vw;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  top:22%;
+  padding-top: 55%;
+  padding-left: 9%;
+  padding-right: 5%;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 320px) {
+  .main-menu {
+    font-size: calc(8px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .main-menu {
+    font-size: 1.2vw;
+  }
+}
+
+.main-menu a:link, a:visited {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 0.5%;
+}
+
+.main-menu a:hover {
+color: #c54658;
+text-decoration: line-through;
+cursor: e-resize;
+
+}
+
+
+.displayContent {
+  order: 2;
+  flex-grow: 2;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+margin-left: 28%;
+padding-left: 3%;
+padding-right: 3%;
+height: 100%;
+width: 69.5%;
+font-family: 'Open Sans', sans-serif;
+/* border-left: 1px dashed #353535; */
+overflow-y: scroll;
+overflow-x: hidden;
+text-overflow: ellipsis;
+}
+
+.displayContent:before{
+  content: ' ';
+display: block;
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.4;
+background-image: url(/assets/images/bgex1.png);
+background-repeat: no-repeat;
+background-size:contain;
+overflow: hidden;
+background-attachment: scroll;
+}
+
+.content {
+    padding-top: 20%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    padding-right: 4%;
+  }
+
+
+.displayContent::-webkit-scrollbar {
+    width: 3px;
+}
+
+.displayContent::-webkit-scrollbar-track {
+    background: #f2ebe7;
+}
+.displayContent::-webkit-scrollbar-thumb {
+    background: #d4b026;
+}
+
+
+/* .selfSummary img {
+width: 120px;
+height: 120px;
+float: right;
+
+} */

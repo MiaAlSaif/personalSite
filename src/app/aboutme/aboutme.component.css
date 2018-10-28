@@ -1,0 +1,33 @@
+.selfSummary p {
+  display: block;
+font-size: 1.2vw;
+padding-bottom: 2%;
+}
+@media screen and (min-width: 320px) {
+  .selfSummary  p {
+    font-size: calc(7px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .selfSummary  p {
+    font-size: 1.2vw;
+
+  }
+}
+.selfSummary h3 {
+  display: block;
+  padding-bottom: 2%;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 320px) {
+  .selfSummary  h3 {
+    font-size: calc(9px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .selfSummary  h3 {
+    font-size: 1.5vw;
+  }
+}

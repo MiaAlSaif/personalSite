@@ -1,0 +1,29 @@
+<!-- <div>
+<ks-modal-gallery
+  [id]="1" [modalImages]="images"
+  [plainGalleryConfig]="plainGalleryGrid"
+  [currentImageConfig]="{downloadable: false, description: customDescriptionHideIfEmpty}"
+  [buttonsConfig]="customButtonsConfigExtUrlNewTab"
+  [slideConfig]="{infinite: false, sidePreviews: {show: false}}"
+  [buttonsConfig]="{visible: false, strategy: 1}"
+  [previewConfig]="{visible: false}"
+  [dotsConfig]="{visible: false}">
+</ks-modal-gallery>
+</div> -->
+
+<div class="my-app-custom-plain-container">
+    <ng-container *ngFor="let img of images">
+      <figure class="my-app-custom-image">
+        <img [src]="img.modal.img"
+             (click)="openImageModalRowDescription(img)"/>
+      </figure>
+    </ng-container>
+  </div>
+  <ks-modal-gallery [id]="0" [modalImages]="images"
+                    [plainGalleryConfig]="customPlainGalleryRowDescConfig"
+                      [currentImageConfig]="{downloadable: false, description: customDescriptionHideIfEmpty}"
+                      [buttonsConfig]="customButtonsConfigExtUrlNewTab"
+                      [slideConfig]="{infinite: false, sidePreviews: {show: false}}"
+                      [buttonsConfig]="{visible: false, strategy: 1}"
+                      [previewConfig]="{visible: false}"
+                      [dotsConfig]="{visible: false}">></ks-modal-gallery>

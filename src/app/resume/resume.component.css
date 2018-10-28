@@ -1,0 +1,78 @@
+
+
+.cv  p {
+  display: block;
+  padding-bottom: .7vw;
+  font-size: 1vw;
+  font-style: italic;
+}
+@media screen and (min-width: 320px) {
+  .cv  p {
+    font-size: calc(7px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .cv  p {
+    font-size: 1vw;
+  }
+}
+.cv  h3 {
+  display: block;
+  padding-bottom: 1vw;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 320px) {
+  .cv  h3 {
+    font-size: calc(9px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .cv  h3 {
+    font-size: 1.5vw;
+  }
+}
+
+.cv  h4 {
+  display: block;
+  padding-bottom: .8vw;
+  font-size: 1.2vw;
+
+}
+@media screen and (min-width: 320px) {
+  .cv  h4 {
+    font-size: calc(8px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .cv  h4 {
+    font-size: 1.2vw;
+  }
+}
+
+.cv ul {
+list-style-type: square;
+
+}
+.cv  li {
+  display:list-item;
+  padding-bottom: 1%;
+  font-size: 1.1vw;
+  margin-left: .2vw;
+}
+@media screen and (min-width: 320px) {
+  .cv  li {
+    font-size: calc(7px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .cv  li {
+    font-size: 1.1vw;
+  }
+}
+
+#dnld{
+  display: inline;
+  width: 1vw;
+  height: 1vw;
+}
