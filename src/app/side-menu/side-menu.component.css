@@ -9,6 +9,7 @@
       width: 2.5%;
       /* border-right: 1px dashed #353535; */
       background-color: #193599;
+      z-index: -2;
 }
   .side-menu__inner {
       position: relative;
